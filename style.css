@@ -179,8 +179,7 @@ header h1:hover{
     flex-wrap: nowrap;
     align-content: center;
     justify-content: flex-start;
-    align-items: stretch;
-    
+    align-items: stretch;  
 }
 .btn{
     margin:.3rem;
@@ -219,5 +218,42 @@ header h1:hover{
     color: var(--cor-10);   
 }
 .body-container-bg{
-    height: 100vh;
+    height: 136vh;
+    background-image: url(Images/tecno.jpg);
+}
+.img-wrapper{   
+    margin: auto;
+    padding-top: 2rem;
+    position: relative;
+    width: 1407px;
+    height: 550px;
+}
+.img-dest{
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+    border-radius: 3rem;
+
+}
+.att{
+    background-color: var(--cor-1);
+    position: absolute;
+    width: 350px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5rem;
+    line-height: 30px;
+    box-shadow: 2px 8px 2px rgba(128, 128, 128, 0.562);
+    top: 130px;
+    left: 49px;
+    animation: movebanner 2s 0.5s forwards;
+}
+.att:hover{    
+    background-image: linear-gradient(to right, rgb(153, 236, 153), #0066cc);
+    color: var(--cor-1);    
+}
+.att:hover>a>p{
+    font-size: 1.5rem;
 }
