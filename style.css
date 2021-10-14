@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    font-size: 16px;
+}
+
+@font-face {
+    font-family:'cloinster';
+    src: url('Fonts/CloisterBlack.ttf') format('truetype');
+}
+@font-face {
+    font-family:'oldeenglish' ;
+    src: url('Fonts/OldeEnglish.ttf') format('truetype');
+}
+@font-face {
+    font-family:'oldlondon' ;
+    src: url('Fonts/OldLondon.ttf') format('truetype');
+}
+@font-face {
+    font-family:'olondona' ;
+    src: url('Fonts/Olondona.otf') format('opentype');
+}
+@font-face {
+    font-family:'typicons';
+    src: url('Fonts/typicons.ttf') format('truetype');
+}
+@font-face {
+    font-family:'school';
+    src: url('Fonts/Sketch\ Gothic\ School.ttf') format('truetype');
+}
+:root{
+    --cor-1:#f6f7f9;
+    --cor-3:#faeffd;
+    --cor-4:#b4ac9d;
+    --cor-5:#a8f0fc;
+    --cor-6:#76e1ff;
+    --cor-7:#6b87f5;    
+    --cor-8:#0268cc;
+    --cor-9:#96ea9a;
+    --cor-10:#161616;
+
+    --font-1:'typicons', serif;
+    --font-2: ;
+    --font-3: ;
+    --font-4: ;
+    --font-5: ;
+    --font-6: ;
+    --font-7: ;
+    --font-8: ;
+    --font-9: ;
+    --font-10: ;   
+}
+
+
+
+
+body{
+    font: normal normal 1rem var(--font-1);
+}
+.container{   
+    margin-top: 0;
+    width: 1598px;
+    
+}
+header{
+    width: 100%;
+    height: 10rem;
+    background-color: var(--cor-10);
+    color: var(--cor-1);
+}
+header h1{
+    text-transform: uppercase;
+    font: normal bold 2rem var(--font-1);
+    padding: 1rem 0rem 0rem 7rem;
+    text-shadow: 0 0 2px gray;
+    width: 31.25rem;    
+    display: flex;   
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+}
+.agroup{
+    display: flex;
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-left: 581px;
+    align-items: flex-start;
+}
+.log-cad{
+    width:12.5rem;
+    display: flex;
+    padding: 5px;
+    margin-left: 1350px;
+    color: black;
+    height: 4rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    
+}
+.btn{
+    margin:.3rem;
+    padding:.4rem;
+    height: 25px;
+    border-radius: 1rem;
+}
+.ul-nav>li:hover{
+    outline: 1px solid black;
+}
+.ul-nav{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-around;    
+    background-color: var(--cor-4);
+}
+.ul-nav li{
+    padding: .3rem;
+    width: 100%;
+    text-align: center;    
+}
+.ul-nav li:hover{
+    background-image: linear-gradient(to bottom, white, gray);
+    opacity: .9;
+    color: var(--cor-10);
+    border:1px solid white;
+}
