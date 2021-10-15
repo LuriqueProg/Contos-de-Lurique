@@ -108,7 +108,7 @@ html{
 }
 @keyframes zoom{
     0%{
-        transform: scale(1.5);
+        transform: scale(1.1);
     }
     100%{
         transform: scale(1);
@@ -170,8 +170,7 @@ header h1:hover{
 .log-cad{
     width:12.5rem;
     display: flex;
-    padding: 0px 5px;
-    
+    padding: 0px 5px;    
     margin-left: 1350px;
     color: black;
     height: 4rem;
@@ -207,7 +206,8 @@ header h1:hover{
     padding: .4rem;
     width: 100%;
     text-align: center; 
-    transition: color 2s;   
+    transition: color 2s;  
+    z-index: 9999; 
 }
 .ul-nav>li:hover{
     font-size: 1.1rem;
@@ -218,8 +218,9 @@ header h1:hover{
     color: var(--cor-10);   
 }
 .body-container-bg{
-    height: 136vh;
+    height: 78vh;
     background-image: url(Images/tecno.jpg);
+    animation: zoom 2s;
 }
 .img-wrapper{   
     margin: auto;
@@ -249,6 +250,7 @@ header h1:hover{
     top: 130px;
     left: 49px;
     animation: movebanner 2s 0.5s forwards;
+    transition: color .8s;
 }
 .att:hover{    
     background-image: linear-gradient(to right, rgb(153, 236, 153), #0066cc);
@@ -256,4 +258,142 @@ header h1:hover{
 }
 .att:hover>a>p{
     font-size: 1.5rem;
+    opacity: .8;
+}
+.bg-p-change{
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+    position: absolute;
+    bottom: -36px;
+}
+.bg-change{
+    position: absolute;
+    width: 100%;
+    height: 30rem;
+    background-color: black;
+    margin: 5rem auto;
+    border-radius: 1.3rem;
+}
+.bg-change h2{
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 2.2rem;
+    transition: color 1s;
+    width: 210px;
+    margin: auto;
+}
+.bg-change h2:hover{
+    color: var(--cor-6);
+}
+.princ{    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    margin: 15rem 0;
+}
+.box{
+    width: 15rem;
+    height: 17rem;
+    position: relative;
+    bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 0 1rem gray;
+    border-radius: 1rem;
+    transition-delay: 1s;
+    transition-property: opacity;
+}
+.box:hover .img-art{
+    opacity: .7;
+    outline: none;
+    border-radius: 0;
+}
+.box:hover .name{   
+    background-color: black;
+    color: white;
+    width: 210px;    
+    left: 0px;    
+    height: 29px;
+    top: 202.25;
+    bottom: 0px;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;    
+}
+.box:hover .conteudo{
+    display: block;
+}
+.art{
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    margin: 1rem;    
+    object-fit: cover;
+    position: absolute;
+    top: -15px;
+    left: -14px;
+}
+.art p{
+    width: 100%;
+    position: absolute;
+    left: 5px;
+    top: 5px;    
+}
+.conteudo{
+    display: none;
+}
+.ep p{
+    position: absolute;
+    bottom: 0px;
+    width: 5rem;
+    height: 2rem;
+    background-color: green;
+    top: 89%;
+    right: 0px;
+    left: 140px;
+    border-radius: 5px 0 0 0;
+    text-align: center;
+    transition: all 1s;
+}
+.ep:hover p{
+    background-color: var(--cor-6);    
+}
+.cont-button{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    text-transform: uppercase;
+    transition: all 1s;
+    
+}
+.cont-button:hover{    
+    background-color: var(--cor-8);
+    color: white;
+}
+.name{
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+}
+.name p{
+    margin-top: 5px;
+}
+
+.img-art{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.sessao-maislidos{
+    width: 1407px;
+    height: 50vh;
+    margin: auto;
+    background-color: white;
 }
