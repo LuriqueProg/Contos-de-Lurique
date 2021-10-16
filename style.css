@@ -199,26 +199,52 @@ header h1:hover{
     align-content: center;
     justify-content: space-around;    
     background-color: var(--cor-4);
+    transition: color 2s;    
+    height: 28px;
+    z-index: 9999;
+}
+.ul-nav>li{
+    padding: .4rem;
+    width: 254px;
+    text-align: center; 
     transition: color 2s;
     z-index: 9999;
 }
-.ul-nav li{
-    padding: .4rem;
-    width: 100%;
-    text-align: center; 
-    transition: color 2s;  
-    z-index: 9999; 
-}
 .ul-nav>li:hover{
-    font-size: 1.1rem;
-}
-.ul-nav li:hover{
     background-image: linear-gradient(to bottom, white, gray);
-    opacity: .9;
+    opacity: 1;
     color: var(--cor-10);   
 }
+.ul-subnav{
+    display: none;   
+    position: relative;
+    left: -4px;
+    top: 5px;
+    width: 264px;
+    border-radius: 0px 0px 10px 10px;
+}
+.li-subnav{
+    height: 20px;    
+    background-image: linear-gradient(to left,var(--cor-7), var(--cor-4));
+    opacity: 1;
+    color: var(--cor-10);   
+}
+.li-subnav:hover{
+    background-image: linear-gradient(to left,black, gray);
+    opacity: 1;
+    color: var(--cor-1);   
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+#finali:hover .ul-subnav{
+    display: block;
+    align-content: center;
+    justify-content: space-around;    
+    background-color: var(--cor-4);    
+    opacity: 1;    
+}
 .body-container-bg{
-    height: 78vh;
+    height: 41.3rem;
     background-image: url(Images/tecno.jpg);
     animation: zoom 2s;
 }
@@ -233,7 +259,8 @@ header h1:hover{
     width: 100%;
     height: 100%;    
     object-fit: cover;
-    border-radius: 3rem;
+    border-radius: 3rem 3rem 0rem 0rem;
+    box-shadow: 11px 13px 0px black
 
 }
 .att{
@@ -260,19 +287,50 @@ header h1:hover{
     font-size: 1.5rem;
     opacity: .8;
 }
-.bg-p-change{
-    width: 100%;
-    height: 2rem;
-    background-color: white;
+.maislidos{
+    margin: 5rem auto 1rem auto ;
+    display: flex;
+    background-color:#656565;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+    border-radius: 2.2rem;
+    position: relative;
+    height: 120px;
+}
+.maislidos h2{
+    text-align: center;
+    display: block;
     position: absolute;
-    bottom: -36px;
+    top: 2%;
+    left: 43%;
+    color: white;
+}
+.cont{
+    background-color:#d0d0d0;
+    margin:2rem;
+    width: 210px;
+    height: 55px;
+    border-radius: 30px 0px 15px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    font-size: 1.2rem;     
+}
+.cont:hover{
+    cursor: pointer;
+    background-color: #2b2b2b;
+    color: #fff;
+    box-shadow: 0px 7px 1px black;
 }
 .bg-change{
     position: absolute;
     width: 100%;
     height: 30rem;
     background-color: black;
-    margin: 5rem auto;
+    margin: 1.5rem auto;
     border-radius: 1.3rem;
 }
 .bg-change h2{
@@ -299,7 +357,7 @@ header h1:hover{
     width: 15rem;
     height: 17rem;
     position: relative;
-    bottom: 1rem;
+    bottom: 2rem;
     background-color: white;
     box-shadow: 0 0 1rem gray;
     border-radius: 1rem;
