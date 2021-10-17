@@ -148,8 +148,7 @@ header h1{
 header h1:hover{
     color: var(--cor-2);      
 }
-.agroup{
-    display: flex;
+.agroup{    
     display: flex;
     width: 400px;
     flex-direction: row;
@@ -538,4 +537,103 @@ header h1:hover{
 .card-button:hover{
     opacity: .8;
     cursor: pointer;
+}
+.card-group h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkslategray;
+}
+.lidos{
+    width: 40rem;
+    height: 100%;      
+}
+.lidos h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkslategray;
+    margin-bottom: 2rem;
+}
+.a-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 540px;    
+}
+.group{    
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 0 10px black;
+    width: 140px;
+    border:1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0px;
+}
+.group-img-wrapper{
+    width: 10rem;
+    height: 10rem;        
+}
+.group-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.group p{
+    position: absolute;
+    bottom: 8%;
+    left: 8.5%;
+    width: 10rem;
+    height: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: black;
+}
+.seletores{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 8%;
+    background-color: rgba(253, 244, 244, 0.849);
+}
+.config{
+    font-size: 2rem;
+}
+.seletores:hover .config{
+    display: none;
+}
+.seletores:hover .selec{
+    display: flex;
+}
+.selec{
+    display: none;   
+    font-size: 1.4rem;
+}
+.selec:hover{
+    opacity: 1;
+}
+.n-lidos{
+    display: none;
+}
+.n-lido, .like, .unlike, .remove{
+    cursor: pointer;
+    margin-left: 14px;
+}
+.n-lido{
+    margin-left: 0px;
+}
+.n-lido:hover{
+    opacity: .8;
+}
+.like:hover{
+    opacity: .8;
+}
+.unlile:hover{
+    opacity:.8;
+}
+.remove:hover{
+    opacity: .8;
 }
