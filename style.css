@@ -455,3 +455,87 @@ header h1:hover{
     margin: auto;
     background-color: white;
 }
+.sessao-lidos-lanc{
+    margin-top: 645px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #e5e1d6;
+}
+.lidos, .lanc{
+    width: 40rem;
+    height: 100%;
+    padding:.8rem;
+    box-shadow: 0 0 10px black;
+    margin-top: 2rem;
+}
+.lanc{
+    background-color: var(--cor-3);
+}
+.img-card-wrapper{
+    width: 16rem;
+    height: 19rem;
+    margin: 1rem;
+}
+.card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-right: none;
+}
+.card{
+    position: relative;
+    box-shadow: 0 0 10px gray;
+    border:1px solid gray;
+    margin: 1rem auto;
+    padding: .5rem;
+    background-color: white;
+}
+.card p{
+    position: absolute;
+    top: 1.5rem;
+    left: 260px;
+    margin: 0 8px 0 -1.3rem;
+    height: 18.5rem;
+    border:1px solid gray;
+    padding: .5rem .5rem 0 1rem;     
+    text-indent: 1rem;
+    text-align: start;
+    border-left: none;
+}
+.card h3{
+    width: 16rem;
+    height: 2rem;
+    background-color: var(--cor-9);
+    position: absolute;    
+    bottom: 19px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 30px 0px 15px 0px;    
+}
+.card-ep{
+    width: 50px;
+    height: 30px;
+    background-color: #4a4a49;
+    color: white;    
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px 11px 12px 0px;
+    position: absolute;
+    top: 12px;
+    left: 11px;
+}
+.card-button{
+    left: 60%;    
+    top: 68%;
+    background-image: linear-gradient(to top, #a044ff, #6a3093);
+}
+.card-button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
