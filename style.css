@@ -1,4 +1,7 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab&family=Lato&family=Roboto&display=trocar');
+
 
 *{
     margin: 0;
@@ -14,7 +17,9 @@
 html{
     font-size: 14px;
 }
-
+h2{
+    font-family: var(--font-7);
+}
 @font-face {
     font-family:'cloinster';
     src: url('Fonts/CloisterBlack.ttf') format('truetype');
@@ -52,12 +57,12 @@ html{
     --cor-10:#161616;
 
     --font-1:'typicons', serif;
-    --font-2: ;
-    --font-3: ;
-    --font-4: ;
-    --font-5: ;
-    --font-6: ;
-    --font-7: ;
+    --font-2:'Raleway', sans-serif;
+    --font-3:'Josefin Sans', sans-serif;
+    --font-4:'Josefin Slab', serif;
+    --font-5:'Lato', sans-serif;
+    --font-6:'Roboto', sans-serif;
+    --font-7:Georgia, 'Times New Roman',times ,serif ;
     --font-8: ;
     --font-9: ;
     --font-10: ;   
@@ -128,7 +133,8 @@ header{
     width: 100%;
     height: 10rem;
     background-color: var(--cor-10);
-    color: var(--cor-1);    
+    color: var(--cor-1); 
+    font-family: var(--font-7);   
 }
 header h1{
     text-transform: uppercase;
@@ -144,6 +150,7 @@ header h1{
     align-items: stretch;
     transition: color 1.3s;
     animation: movebanner 2s 0.5s forwards;
+    font-family: var(--font-2);
 }
 header h1:hover{
     color: var(--cor-2);      
@@ -201,6 +208,7 @@ header h1:hover{
     transition: color 2s;    
     height: 28px;
     z-index: 9999;
+    font-family: var(--font-6);
 }
 .ul-nav>li{
     padding: .4rem;
@@ -316,7 +324,8 @@ header h1:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;   
-    font-size: 1.2rem;     
+    font-size: 1.2rem;  
+    font-family: var(--font-2);   
 }
 .cont:hover{
     cursor: pointer;
@@ -338,7 +347,7 @@ header h1:hover{
     padding-top: 1.5rem;
     font-size: 2.2rem;
     transition: color 1s;
-    width: 210px;
+    width: 260px;
     margin: auto;
 }
 .bg-change h2:hover{
