@@ -503,6 +503,7 @@ header h1:hover{
     text-indent: 1rem;
     text-align: start;
     border-left: none;
+    font-size: 1.2rem;
 }
 .card h3{
     width: 16rem;
@@ -590,7 +591,7 @@ header h1:hover{
     font-size: 1.2rem;
     text-align: center;
     background-color: cornflowerblue;
-    color: black;
+    color: black;    
 }
 .seletores{
     display: flex;
@@ -599,14 +600,11 @@ header h1:hover{
     top: 8%;
     background-color: rgba(253, 244, 244, 0.849);
 }
-.config{
+.config, .config-2{
     font-size: 2rem;
 }
-.seletores:hover .config{
+.config-2{
     display: none;
-}
-.seletores:hover .selec{
-    display: flex;
 }
 .selec{
     display: none;   
@@ -620,7 +618,7 @@ header h1:hover{
 }
 .n-lido, .like, .unlike, .remove{
     cursor: pointer;
-    margin-left: 14px;
+    margin-left: 32px;
 }
 .n-lido{
     margin-left: 0px;
@@ -634,6 +632,105 @@ header h1:hover{
 .unlile:hover{
     opacity:.8;
 }
+.unlike{
+    display: none;
+}
 .remove:hover{
     opacity: .8;
+}
+.melhores{    
+    margin-left: 56.5rem;
+    margin-top: -52rem;
+    width: 41.5rem;
+    height: 100%;
+    background-color: var(--cor-3);
+    box-shadow: 0 0 10px black;
+}
+.melhores h2{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: darkslategray;
+    font-size: 2rem;
+    margin-top: .6rem;
+}
+.card-box-group{
+    position: relative;
+}
+.melhores-div{
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px grey;
+    border: 1px solid gray;
+    margin: 1.2rem;
+    position:relative;
+}
+.card-box, .img-hover{
+    width: 18rem;
+    height: 21rem;    
+}
+.card-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;    
+}
+.card-box h3{
+    position: absolute;
+    top: 4%;
+    left: 65%;
+    font-size: 1.6rem;
+}
+.card-box p{
+    position: absolute;
+    top: 17%;
+    width: 20rem;
+    left: 48%;    
+    text-indent: 1rem;
+    text-align: start;
+    border-left: none;
+    font-size: 1.2rem;
+}
+.card-box-button{
+    left: 63%;
+    top: 80%;
+}
+.img-conteudo{
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    display: none;
+}
+.img-conteudo h4{
+    position: absolute;
+    top: 6%;
+    left: -69px;
+    font-size: 2rem;
+    width: 18.3rem;
+    text-align: center;
+}
+.img-conteudo p{
+    position: relative;
+    top: -30px;
+    left: -76%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    background-color: #4a4a49;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 14px 11px 12px 0px;
+}
+.img-hover{
+    transition: all 1s;
+}
+.img-hover:hover img{
+    opacity: .8;
+}
+.img-hover:hover .img-conteudo{
+    display: flex;
 }
