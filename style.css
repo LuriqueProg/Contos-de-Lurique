@@ -15,7 +15,7 @@
 }
 
 html{
-    font-size: 14px;
+    font-size: 14px;    
 }
 h2{
     font-family: var(--font-7);
@@ -119,136 +119,10 @@ h2{
         transform: scale(1);
     }
 }
-
-
-body{
-    font: normal normal 1rem var(--font-1);
-}
 .container{   
     margin-top: 0;
     width: 1581px;
     
-}
-header{
-    width: 100%;
-    height: 10rem;
-    background-color: var(--cor-10);
-    color: var(--cor-1); 
-    font-family: var(--font-7);   
-}
-header h1{
-    text-transform: uppercase;
-    font: normal bold 2rem var(--font-1);
-    padding: 1rem 0rem 0rem 7rem;
-    text-shadow: 0 0 2px gray;
-    width: 31.25rem;    
-    display: flex;   
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: center;
-    align-items: stretch;
-    transition: color 1.3s;
-    animation: movebanner 2s 0.5s forwards;
-    font-family: var(--font-2);
-}
-header h1:hover{
-    color: var(--cor-2);      
-}
-.agroup{    
-    display: flex;
-    width: 400px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    margin-left: 581px;
-    align-items: flex-start;
-    
-}
-.ul-header{
-    transition: color .5s;    
-    font: normal lighter 1.4rem var(--font-1); 
-}
-.ul-header:hover{
-    color:var(--cor-9);
-}
-.log-cad{
-    width:12.5rem;
-    display: flex;
-    padding: 0px 5px;    
-    margin-left: 1350px;
-    color: black;
-    height: 4rem;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: stretch;  
-}
-.btn{
-    margin:.3rem;
-    padding:.4rem;
-    height: 25px;
-    border-radius: 1rem;
-    transition: all 2s;
-}
-.btn:hover{
-    background-image: linear-gradient(to right,rgb(162, 240, 216), rgb(0, 255, 119));
-    opacity: .8;
-    text-transform:uppercase ;
-}
-
-.ul-nav{
-    display: flex;
-    width: 100%;
-    align-content: center;
-    justify-content: space-around;    
-    background-color: var(--cor-4);
-    transition: color 2s;    
-    height: 28px;
-    z-index: 9999;
-    font-family: var(--font-6);
-}
-.ul-nav>li{
-    padding: .4rem;
-    width: 254px;
-    text-align: center; 
-    transition: color 2s;
-    z-index: 9999;
-}
-.ul-nav>li:hover{
-    background-image: linear-gradient(to bottom, white, gray);
-    opacity: 1;
-    color: var(--cor-10);   
-}
-.ul-subnav{
-    display: none;   
-    position: relative;
-    left: -4px;
-    top: 5px;
-    width: 264px;
-    border-radius: 0px 0px 10px 10px;
-}
-.li-subnav{
-    height: 20px;    
-    background-image: linear-gradient(to left,var(--cor-7), var(--cor-4));
-    opacity: 1;
-    color: var(--cor-10);   
-}
-.li-subnav:hover{
-    background-image: linear-gradient(to left,black, gray);
-    opacity: 1;
-    color: var(--cor-1);   
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-#finali:hover .ul-subnav{
-    display: block;
-    align-content: center;
-    justify-content: space-around;    
-    background-color: var(--cor-4);    
-    opacity: 1;    
 }
 .body-container-bg{
     height: 41.3rem;
@@ -556,7 +430,8 @@ header h1:hover{
 }
 .lidos{
     width: 40rem;
-    height: 100%;      
+    height: 100%;   
+    background-color: var(--cor-3);   
 }
 .lidos h2{
     text-align: center;
@@ -581,6 +456,7 @@ header h1:hover{
     border-radius: 10px;
     margin: 10px;
     margin-left: 0px;
+    background-color: white;
 }
 .group-img-wrapper{
     width: 10rem;
