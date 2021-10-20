@@ -44,6 +44,10 @@ h2{
     font-family:'school';
     src: url('Fonts/Sketch\ Gothic\ School.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'newsgot';
+    src: url('Fonts/newsgot.ttf') format('truetype');
+}
 :root{
     --cor-1:#f6f7f9;
     --cor-2:rgb(0, 255, 119);
@@ -63,7 +67,7 @@ h2{
     --font-5:'Lato', sans-serif;
     --font-6:'Roboto', sans-serif;
     --font-7:Georgia, 'Times New Roman',times ,serif ;
-    --font-8: ;
+    --font-8: 'newsgot', serif;
     --font-9: ;
     --font-10: ;   
 }
