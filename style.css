@@ -314,6 +314,7 @@ h2{
     border: 1px solid gray;
     text-transform: uppercase;
     transition: all 1s;
+    cursor: pointer;
     
 }
 .cont-button:hover{    
@@ -491,6 +492,7 @@ h2{
 }
 .config, .config-2{
     font-size: 2rem;
+    cursor: pointer;
 }
 .config-2{
     display: none;
