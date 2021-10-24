@@ -1,6 +1,13 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab&family=Lato&family=Roboto&display=trocar');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100; 0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1.900&display=swap');
+@font-face {
+    font-family:'ico';
+    src: url('fontes/typicons.ttf') format('truetype');
+}
+@font-face{font-family:'hcom-icons';src:url("https://a.cdn-hotels.com/kesstatic/4cdc79c005b4a57639c5.woff2") format("woff2"),url("https://a.cdn-hotels.com/kesstatic/e6d917f38ea485e12cab.ttf") format("truetype"),url("https://a.cdn-hotels.com/kesstatic/1d79dff575c5ac9b0991.woff") format("woff"),url("https://a.cdn-hotels.com/kesstatic/d9e8a8e84affc97fed0e.svg") format("svg");
+}
 
 
 *{
@@ -12,6 +19,9 @@
     text-decoration: none;
     color: inherit;
     scroll-behavior: smooth;
+}
+i{
+    font-family: 'ico';
 }
 
 html{
@@ -163,10 +173,69 @@ header h1:hover{
 }
 .ul-header{
     transition: color .5s;    
-    font: normal lighter 1.4rem var(--font-1); 
+    font: normal lighter 1.4rem var(--font-1);     
 }
-.ul-header:hover{
+/* #cat::after{
+    content: "";    
+    font-family: hcom-icons;
+    position: absolute;
+    top: 11.5%;
+    left: 59%;
+} */
+.after, .before{
+    content: "";    
+    font-family: hcom-icons;
+    position: absolute;
+    font-size: 2rem;
+    top: 5.4%;
+    left: 59%;   
+    cursor: pointer;   
+}
+.after{
+    display: none;  
+    top: 6%;  
+}
+.before{
+    transform: rotate3d(35, 32, 0, 195deg);    
+}
+.li-header:hover{
     color:var(--cor-9);
+}
+.ul-cat{
+    position:absolute;
+    top: 140px;
+    height: 28px;
+    left: 0px;
+    width: 1581px;
+    height: 28px;
+    display: none;
+    line-height: 85%;
+}
+.ul-cat-group{    
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;    
+    background-color: var(--cor-4);
+    transition: color 2s;    
+    height: 28px;
+    z-index: 9999;
+    font-family: var(--font-6);
+}
+.ul-cat-group li{
+    padding: .4rem;
+    width: 254px;
+    text-align: center; 
+    transition: color .9s;
+    z-index: 9999;
+    color: black;
+}
+.ul-cat-group li:hover{
+    background-image: linear-gradient(to bottom, white, gray);
+    opacity: 1;
+    color: var(--cor-1);   
+    text-shadow: 1px 1px 1px black;   
 }
 .log-cad{
     width:12.5rem;
@@ -215,7 +284,8 @@ header h1:hover{
 .ul-nav>li:hover{
     background-image: linear-gradient(to bottom, white, gray);
     opacity: 1;
-    color: var(--cor-10);   
+    color: var(--cor-1);   
+    text-shadow: 1px 1px 1px black;
 }
 .ul-subnav{
     display: none;   
