@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style-ord.css">
+    <link rel="stylesheet" href="../categorias/style.css">
     <title>Light Novels</title>
 </head>
 <body>
@@ -16,9 +17,17 @@
                 <ul class="ul-header"><a href="#">
                     <h3>Light Novels</h3>
                 </a></ul>
-                <ul class="ul-header"><a href="#">
-                    <h3>Categorias</h3>
-                </a></ul>
+                <ul class="ul-header">
+                    <i class="typcn-flag"><li id="cat"><h3 class="li-header"><a href="cat-index.html">Categorias</a></h3><span class="after"></span><span class="before"></span></i>
+                        <ul class="ul-cat">
+                            <div class="ul-cat-group">
+                                <a href="../categorias/cat-index.html"><li>Genêros</li></a>
+                                <a href="light-index.html"><li>Ordem Alfabetica</li></a>
+                                <a href="light-ncap.index.html"><li>Numero de Capitulos</li></a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="log-cad">
                 <button class="btn" id=""><a href="../perfil/logar/log.html">Logar-se</a></button>
@@ -365,4 +374,5 @@
      </div>    
 </body>
 <script src="navbar.js"></script>
+<script src="../categorias/script.js"></script>
 </html>
